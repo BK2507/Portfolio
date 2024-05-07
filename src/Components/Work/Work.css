@@ -1,0 +1,166 @@
+#myWork{
+    overflow: hidden;
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7rem auto 10rem auto;
+}
+
+.workTitle{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 4rem;
+    letter-spacing: 0.1px;
+    margin-right: 1rem ;
+    margin-bottom: 3rem;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    color: rgb(86, 86, 166);
+    text-shadow: 0px 0px 10px rgb(62, 62, 146);
+}
+
+.workBars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:5rem ;
+    max-width: 70%;
+}
+
+.workBar{
+    padding:  40px 5px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 2rem;
+    align-items: center;
+    background: rgb(30, 30, 30);
+    box-shadow: 0px 0px 5px rgb(94, 94, 180)
+}
+
+.img-work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.img-work img{
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 60%;
+    opacity: .5s;
+    height: 60%;
+    transition: .5s;
+}
+
+.img-work h3{
+    font-size: medium;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.img-work h3:hover{
+    opacity: 0;
+
+}
+
+.work-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 1rem;
+    background: linear-gradient(rgba(0,0,0,.2),rgb(94, 94, 180));
+}
+
+
+.workBar:hover .work-content{
+    opacity: 1;
+}
+
+
+.work-content a{
+    display: flex;
+    flex-basis: auto;
+    color: black;
+    background: white;
+    border-radius: 18%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+}
+
+.up-right-arrow{
+    width: 15px;
+}
+
+@media screen and (max-width:780px) {
+
+    #myWork{
+        height: 100vh;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .workTitle{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 3rem;
+        letter-spacing: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+        writing-mode:horizontal-tb;
+    }
+
+    .workBars{
+        width: 100%;
+        padding:5rem ;
+        max-width: 100%;
+    }
+
+    .work-content{
+        opacity: 1;
+        width: 100%;
+        height: 20%;
+        padding: 0 1rem;
+        background: none;
+    }
+
+    .workBar{
+        padding-bottom: 3.5rem;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 1rem;
+        align-items: center;
+        background: rgb(30, 30, 30);
+        box-shadow: 0px 0px 5px rgb(94, 94, 180)
+    }
+}

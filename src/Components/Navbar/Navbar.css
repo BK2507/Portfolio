@@ -1,0 +1,162 @@
+.navbar{
+    background: rgb(30, 30, 30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position:fixed;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+    gap: 5.5%;
+}
+
+h5{
+    font-size:30px;
+    cursor:default;
+    background-image: linear-gradient(
+    -225deg,
+    #665fa4 0%,
+    #4a558d 30%,
+    #7788e9 67%,
+    #375a82 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.menu{
+    margin: 1rem;
+    margin-right: 2%;
+    
+}
+
+.menuItem{
+    margin: 1rem;
+    cursor: pointer;
+    font-size: medium;
+    color: white;
+}
+
+.menuItem:hover{
+    color: rgb(165, 165, 232);
+    text-shadow: 0px 0px 2px rgb(135, 135, 232);
+}
+
+.active{
+    color:rgb(135, 135, 232) ;
+    border-bottom: 3px solid rgb(135, 135, 232);
+    padding-bottom: 0.5rem;
+}
+
+.active1{
+    color:black;
+    background-color: white;
+    padding: 5px 11px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.active1:hover{
+    color:white;
+    background-color:rgb(135, 135, 232);
+    border: none;
+    box-shadow: 0 0 5px 1px rgb(135, 135, 232);
+    transition: all 0.2s ease-in-out;
+}
+
+.active2{
+    color:black;
+    background-color: white;
+    padding: 5px 11px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-solid{
+    display: none;
+    color: whitesmoke;
+}
+
+
+.side-navbar{
+    display: flex;
+    background: rgb(30, 30, 30);
+    gap: 70px;
+    top: 0;
+    padding:20px;
+    position: fixed;
+    height: 100%;
+    right: -60%;
+    transition: all 0.5s ease-in-out;
+}
+
+.side-navbar-links p{
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar i{
+    margin-top: 4px;
+}
+
+
+
+
+
+@media screen and (max-width:770px) {
+
+
+    .navbar{
+        height: 2rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .navbar h5{
+        font-size:28px;
+    }
+
+    .fa-solid{
+        display:flex;
+        color: whitesmoke;  
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .active1{
+        display: none;
+    }
+
+}
